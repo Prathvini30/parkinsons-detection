@@ -1,47 +1,33 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
 
-# dependencies
-/node_modules
-/.pnp
+# Node
+node_modules/
+.pnp
 .pnp.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# testing
-/coverage
+# Build and testing
+build/
+coverage/
 
-# production
-/build
+# Datasets (not uploaded)
+/spiral_images/
+/voice_samples/
 
-# misc
-.DS_Store
+# Environment and OS files
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-/spiral_images
-/voice_samples
-# production
-/build
-
-# misc
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Temporary files created by the app
+backend/temp_image.png
+backend/temp_audio.webm
